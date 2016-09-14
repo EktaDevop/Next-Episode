@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<head>
+	<script src ="jquery.js" type ="text/javascript">
+	</script>
+	<script src="jquery-ui.min.js" type="text/javascript"></script>
+	<link rel = "stylesheet" href="jquery-theme.css" />
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<style>
+		body{
+			font-family: 'Open Sans',sans-serif;
+			min-width: 200px;
+			font-size:12px;
+			width:auto;
+		}
+		.ui-menu-item{
+			font-size: 12px;
+		}
+		h5{
+			font-size: 14px;
+		}
+		#fetch{
+			margin-top:10px;
+			color:#333;
+			background-color:#fff;
+			padding: 3px 6px;
+			font-size: 12px;
+			border:1px solid #ccc;
+			border-radius: 3px; 
+		}
+		img.lazy{
+			border:1px #ccc;
+			box-shadow: 0 0 1px 1px #222;
+			margin-left: 40px;
+		}
+		.item{
+			width: auto;
+			margin-top:8px;
+			display: table-row;
+		}
+		.item img{
+			cursor: pointer;
+			display: table-cell;
+		}
+		.item span{
+			display: table-cell;
+			vertical-align: middle;
+			padding-left: 4px;
+		}
+		#epname{
+			background-color: #fff;
+			border:1px solid #ccc;
+			border-radius:3px;
+			outline: none;
+			padding: 3px 6px;
+		}
+		#epname:focus{
+			border-color:#66afe9;
+			box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.65);
+		}
+	</style>
+	<script src ="nextep.js" type ="text/javascript">
+	</script>
+</head>
+<body>
+<h5>Welcome to Next Episodes!</h5>
+<div id="content" style="text-align:center">
+	<input type="text" id="epname" placeholder="Enter Episode Name" autofocus = "autofocus"/>
+	<button id="fetch">Go Fetch!</button>
+</div>
+<img id = "loader" width="100px" height="15px" src = "ajax-loader.gif" style="margin-left:46px;margin-top:15px;" alt = "Loading.."/>
+<div id = "result" style="margin-left:10px;margin-top:15px">
+</div>
+<script>
+     var _gaq = _gaq || [];
+     _gaq.push(['_setAccount', 'UA-53259382-1']);
+     _gaq.push(['_trackPageview']);
+
+     (function() {
+       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+       ga.src = 'https://ssl.google-analytics.com/ga.js';
+       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+     })();
+   </script>
+</body>
+</html>

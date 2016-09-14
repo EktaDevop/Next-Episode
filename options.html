@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+	<head></head>
+	<body>
+		<button onclick="clear()">Clear Browsed Data!</button>
+		<script type="text/javascript">
+			function clear(){
+				chrome.storage.sync.set({'epname':[]},function(){
+					console.log('Cleared Cache');
+				});
+			}
+		</script>
+	</body>
+</html>

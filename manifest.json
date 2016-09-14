@@ -1,0 +1,23 @@
+{
+	"name":"Next Episode",
+	"version":"2.0",
+	"manifest_version":2,
+	"description":"Get to know when the next episode of your favorite show would come up",
+	"icons":{"16":"tv_ico_16.png","48":"tv_ico_48.png","128":"tv_ico_128.png"},
+	"permissions":[
+		"http://next-episode.net/*",
+		"storage","tabs"
+	],
+	"background":{
+		"scripts":[
+			"jquery.js",
+			"background.js"
+		]
+	},
+	"browser_action":{
+		"default_icon":"tv_ico_128.png",
+		"default_title":"Get the next episode date",
+		"default_popup":"popup.html"
+	},
+	"options_page":"options.html"
+}
